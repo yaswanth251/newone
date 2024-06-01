@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Contact.css';
-import './animation.css';
+import '../src/Contact.css';
+import '../src/animation.css';
 
 function Contact() {
   return (

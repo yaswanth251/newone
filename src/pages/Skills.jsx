@@ -2,8 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import GraphComponent from './GraphComponent';
-import './animation.css';
-import './Skills.css';
+import '../src/animation.css';
+import '../src/Skills.css';
 
 function Skills() {
   return (

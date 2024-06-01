@@ -1,6 +1,6 @@
 // Loader.js
 import React from 'react';
-import './loader.css'; // Create and import a CSS file for custom styles
+import '../src/loader.css'; // Create and import a CSS file for custom styles
 
 const Loader = () => {
   return (

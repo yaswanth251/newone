@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './Projects.css'
-import './animation.css'
+import '../src/Projects.css'
+import '../src/animation.css'
 function Projects() {
   return (
     <div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import './About.css';
-import './animation.css';
+import '../src/About.css';
+import '../src/animation.css';
 import { Link } from 'react-router-dom';
-import './animation.css'
+import '../src/animation.css'
 
 function About() {
   function fun() {

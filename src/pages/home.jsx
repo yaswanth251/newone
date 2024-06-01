@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./home.css";
-import "./animation.css";
+import "../src/home.css";
+import "../src/animation.css";
 function Home() {
   return (
     <div>
