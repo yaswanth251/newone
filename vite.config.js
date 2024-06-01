@@ -5,11 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-router-dom'],
-      onwarn: (warning, warn) => {
-        console.log(warning.message);
-        warn(warning);
-      }
+      external: ['react-router-dom']
     }
   }
 });
