@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated to use `Routes` from 'react-router-dom'
 import Loader from './Loader';
 import { sleep } from './utils';
 
@@ -10,7 +10,7 @@ const lazyWithDelay = (importFunc, delay) => {
   );
 };
 
-const Home = lazyWithDelay(() => import('./home'), 1000); // 3 seconds delay
+const Home = lazyWithDelay(() => import('./home'), 1000);
 const About = lazyWithDelay(() => import('./About'), 1000);
 const Skills = lazyWithDelay(() => import('./Skills'), 1000);
 const Projects = lazyWithDelay(() => import('./Projects'), 1000);
@@ -19,7 +19,7 @@ const NoPage = lazyWithDelay(() => import('./NoPage'), 1000);
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,7 +30,7 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </Suspense>
-    </BrowserRouter>
+    </Router>
   );
 }
 
